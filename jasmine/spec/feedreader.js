@@ -95,7 +95,7 @@ $(function() {
 
              it('load feed',function(done) {
 
-               expect($('.feed').children().length > 0).toBeTruthy()
+               expect($('.feed').children().length > 0).toBeTruthy();
                 done();
              });
 
@@ -123,11 +123,11 @@ $(function() {
              });
 
              it('load new Feeds',function(done){
-               
+
                loadFeed(1,function() {
                  CSSTricksFeed = $('.feed').children().text();
                  expect(udacityFeed).not.toBe(CSSTricksFeed);
-                 done()
+                 done();
                });
              });
 
